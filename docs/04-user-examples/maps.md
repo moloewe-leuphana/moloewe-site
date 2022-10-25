@@ -1,4 +1,4 @@
-# 🗺️Maps
+# Maps
 
 ### Required Skills & Software
 
@@ -10,8 +10,9 @@
 
 There are two ways to incorporate a map in MoLöWe:
 
-- if your file are **smaller** than 45 Mb: use **Mapbox**
-- if your file are **bigger** than 45 Mb: create a map **locally** in a GIS and load it as an image file (either from the MoLöWe-Server or from Git-repo) into MoLöWe
+- if your gis file (e.g. shapefile) is…
+    - **smaller** than 45 Mb: use **Mapbox**
+    - **bigger** than 45 Mb: create a map **locally** in a GIS and load it as an image file (either from the MoLöWe-Server or from Git-repo) into MoLöWe
 
 [https://miro.com/app/board/uXjVPfd4oZ8=/?share_link_id=811493081374](https://miro.com/app/board/uXjVPfd4oZ8=/?share_link_id=811493081374)
 
@@ -64,7 +65,7 @@ All GIS processing and plotting is happening “from scratch” each time you ac
 
 Each dot is a tree, the color representing its health aka. its “score”. Hovering over a tree will show its coordinates and description of health (”excellent”, “good” or “unfit”). The source data is a point shapefile previously uploaded to the MoLöWe-Server (using a coordinate table would also be possible, see python code).
 
-![mapbox_simple_gif.gif](mapbox_scatter_gif.gif)
+![mapbox_scatter_gif.gif](mapbox_scatter_gif.gif)
 
 ### **Source Data Sample**
 
@@ -119,11 +120,11 @@ setattr(tool_map, "get_treemap", get_treemap)
 
 ### Example
 
-Same as in previous example, however, now we can single out trees that belong to a certain health category (”excellent”, “good” or “unfit”) using a dropdown list. Hovering over a tree will show its coordinates and score.
+Same as in previous example, however, now we can restrict the map to trees that belong to a certain health category (”excellent”, “good” or “unfit”) using a dropdown list. Hovering over a tree will show its coordinates and score.
 
 Note: After making a selection in the dropdown list, the map must be refreshed (in the upper right corner of the map) to apply the changes.
 
-![mapbox_dropdown_gif.gif](mapbox_scatter_dropdown_gif.gif)
+![mapbox_scatter_dropdown_gif.gif](mapbox_scatter_dropdown_gif.gif)
 
 ### **Source Data Sample**
 
@@ -310,7 +311,7 @@ setattr(tool_map, "get_buildings_discreet_map", get_buildings_discreet_map)
 
 Same as in previous example, however, now we have a slider where we choose a height threshold. Buildings whose heights fall below this treshold are removed from the map. In addition, a bar chart next to the map shows the amount of remaining buildings grouped by roof shape.
 
-Note: After making a selection in the slider, the map must be refreshed (in the upper right corner of the map) to apply the changes. The same goes for the bar chart.
+Note: After selecting a new value on the slider, the map must be refreshed (in the upper right corner of the map) to apply the changes. The same goes for the bar chart.
 
 ![mapbox_choro_slider_piechart_gif.gif](mapbox_choro_slider_piechart_gif.gif)
 
@@ -423,9 +424,9 @@ setattr(tool_graph, "get_buildings_slider_barchart", get_buildings_slider_barcha
 
 So far, we generated our polygons beforehand (i.e. in a GIS) and imported them into the MoLöWe-Server to use them in Mapbox. We can also generate new polygons within Mapbox.
 
-In this example we are generating buffers around trees. The buffer size is defined by a slider input. Each time a new value is selected on the slider, new buffers are generated and then displayed in the map.
+In this example we are generating buffers around trees. The buffer size is defined by the slider input. Each time a new value is selected on the slider, new buffers are generated and then displayed in the map.
 
-Note: After making a selection in the slider, the map must be refreshed (in the upper right corner of the map) to apply the changes. 
+Note: After selecting a new value on the slider, the map must be refreshed (in the upper right corner of the map) to apply the changes. 
 
 ![mapbox_generate_polygons_gif.gif](mapbox_generate_polygons_gif.gif)
 
