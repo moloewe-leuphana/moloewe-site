@@ -1,0 +1,8 @@
+.FAQContainer {
+  padding: 10% 5%;
+  text-align: justify;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+}
