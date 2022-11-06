@@ -1,22 +1,37 @@
 # Maps
 
-### Required Skills & Software
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '20px',
+      color: '#fff',
+      padding: '10px',
+      cursor: 'pointer',
+    }}
+    onClick={() => {
+      alert(`You clicked the color ${color} with label ${children}`)
+    }}>
+    {children}
+  </span>
+);
+
+## <div style={{backgroundColor: '#691633'}}> Required Skills & Software </div>
 
 - GIS
 - Python
 - Gitlab
 
-### **How to Start**
+## <div style={{backgroundColor: 'lightblue'}}> How to Start </div>
 
-There are two ways to incorporate a map in MoLöWe:
+There are two ways to incorporate a map in MoLöWe.
 
-- if your gis file (e.g. shapefile) is…
-    - **smaller** than 45 Mb: use **Mapbox**
-    - **bigger** than 45 Mb: create a map **locally** in a GIS and load it as an image file (either from the MoLöWe-Server or from Git-repo) into MoLöWe
+If your gis file (e.g. shapefile) is…
+- **smaller** than 45 Mb: use **Mapbox**
+- **bigger** than 45 Mb: create a map **locally** in a GIS and load it as an image file (either from the MoLöWe-Server or from Git-repo) into MoLöWe
 
 [https://miro.com/app/board/uXjVPfd4oZ8=/?share_link_id=811493081374](https://miro.com/app/board/uXjVPfd4oZ8=/?share_link_id=811493081374)
 
-### Note
 
 In the following, the two ways are presented in detail. Example maps with their affiliated data (sample) and python codes are shown. The examples are intended to give you a glimpse into what’s possible with maps in the MoLöWe.
 
@@ -36,7 +51,9 @@ Also, you need to define a mapbox token at the beginning of your notebook, such 
 mapbox_access_token = "pk.eyJ1IjoibW9sb2V3ZSIsImEiOiJjanprMzFkODUwMnJyM29vM3lwYWNwMG5jIn0.ElIGswv7z_KNHyivxm9yrg"
 ```
 
-# **Mapbox**
+## <Highlight color="#25c2a0">Mapbox</Highlight>
+
+### Using Mapbox
 
 All GIS processing and plotting is happening “from scratch” each time you access the slide (using the files imported to the MoLöWe-Server for the project).
 
@@ -53,21 +70,22 @@ All GIS processing and plotting is happening “from scratch” each time you ac
 
 **Notes**
 
-- Mapbox Scatter plots can be built from either a **coordinate table** (long & lat) or from a **point shape file**
 - In order to use shape files in your maps, you must import the shape files with all of their extensions to the MoLöWe-Server
     - Supported formats on the Server are .shp, .shx, .prj and .dbf (cpg-files are not supported)
 
 ---
 
-### **Scatter Plot**
+### Scatter Plot
 
-### Example
+Mapbox Scatter plots can be built from either a **coordinate table** (long & lat) or from a **point shape file**
+
+#### Example
 
 Each dot is a tree, the color representing its health aka. its “score”. Hovering over a tree will show its coordinates and description of health (”excellent”, “good” or “unfit”). The source data is a point shapefile previously uploaded to the MoLöWe-Server (using a coordinate table would also be possible, see python code).
 
 ![mapbox_scatter_gif.gif](mapbox_scatter_gif.gif)
 
-### **Source Data Sample**
+#### Source Data Sample
 
 | lat | lon | text | score |
 | --- | --- | --- | --- |
@@ -76,7 +94,7 @@ Each dot is a tree, the color representing its health aka. its “score”. Hove
 | 53.2634 | 10.3981 | good | 2 |
 | 53.2647 | 10.3981 | unfit | 4 |
 
-### Python Code
+#### Python Code
 
 ```python
 def get_tree_map(self):
