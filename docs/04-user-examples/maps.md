@@ -2,10 +2,8 @@
 
 import Highlight from '@site/src/theme/highlight';
 
-## <div style={{backgroundColor: 'lightblue'}}> **Required Skills & Software** </div>
-## <div style="color:red;"> **Required Skills & Software** </div>
 
-display: inline-block
+## <div style={{backgroundColor: 'lightblue'}}> **Required Skills & Software** </div>
 
 - GIS
 - Python
