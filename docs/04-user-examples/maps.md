@@ -2,15 +2,14 @@
 
 import Highlight from '@site/src/theme/highlight';
 
-I can conveniently use <Highlight color="#25c2a0">Docusaurus green</Highlight> everywhere!
-
 ## <div style={{backgroundColor: 'lightblue'}}> **Required Skills & Software** </div>
+## <div style="color:red;"> **Required Skills & Software** </div>
+
+display: inline-block
 
 - GIS
 - Python
 - Gitlab
-
-## <div style={{backgroundColor: 'lightblue'}}> **How to Start** </div>
 
 There are **two ways** to incorporate a map in MoLöWe.
 
@@ -71,13 +70,13 @@ In order to use shape files in your maps, you must import the shape files with a
 
 Mapbox Scatter plots can be built from either a **coordinate table** (long & lat) or from a **point shape file**
 
-#### <Highlight color="blue">Example</Highlight>
+#### <Highlight color="grey">Example</Highlight>
 
 Each dot is a tree, the color representing its health aka. its “score”. Hovering over a tree will show its coordinates and description of health (”excellent”, “good” or “unfit”). The source data is a point shapefile previously uploaded to the MoLöWe-Server (using a coordinate table would also be possible, see python code below).
 
 ![mapbox_scatter_gif.gif](mapbox_scatter_gif.gif)
 
-#### <Highlight color="blue">Source Data (Sample)</Highlight>
+#### <Highlight color="grey">Source Data (Sample)</Highlight>
 
 | lat | lon | text | score |
 | --- | --- | --- | --- |
@@ -86,7 +85,7 @@ Each dot is a tree, the color representing its health aka. its “score”. Hove
 | 53.2634 | 10.3981 | good | 2 |
 | 53.2647 | 10.3981 | unfit | 4 |
 
-#### Python Code
+#### <Highlight color="grey">Python Code</Highlight>
 
 ```python
 def get_tree_map(self):
@@ -128,7 +127,7 @@ setattr(tool_map, "get_treemap", get_treemap)
 
 ### Scatter Plot with Dropdown List
 
-#### Example
+#### <Highlight color="grey">Example</Highlight>
 
 Same as in previous example, however, now we can restrict the map to trees that belong to a certain health category (”excellent”, “good” or “unfit”) using a dropdown list. Hovering over a tree will show its coordinates and score.
 
@@ -136,7 +135,7 @@ Note: After making a selection in the dropdown list, the map must be refreshed (
 
 ![mapbox_scatter_dropdown_gif.gif](mapbox_scatter_dropdown_gif.gif)
 
-#### Source Data (Sample)
+#### <Highlight color="grey">Source Data (Sample)</Highlight>
 
 (same as in previous example)
 
@@ -147,7 +146,7 @@ Note: After making a selection in the dropdown list, the map must be refreshed (
 | 53.2634 | 10.3981 | good | 2 |
 | 53.2647 | 10.3981 | unfit | 4 |
 
-#### Python Code
+#### <Highlight color="grey">Python Code</Highlight>
 
 **Dropdown List Functions**
 
@@ -219,13 +218,13 @@ setattr(tool_map, "get_tree_dropdown_map", get_tree_dropdown_map)
 
 ### Choropleth Map - Continuous Color Scale
 
-#### Example
+#### <Highlight color="grey">Example</Highlight>
 
 Buildings are colored according to their height. The source data is a shape file (imported to the MoLöWe-Server). Hovering over a building will show its index in the shape file and its height (”HOEHEGEB”). A continuous color scale is used.
 
 ![mapbox_choro_cotinuous_gif.gif](mapbox_choro_cotinuous_gif.gif)
 
-#### Source Data (Sample)
+#### <Highlight color="grey">Source Data (Sample)</Highlight>
 
 - "HOEHEGEB": Building heights
 - "DACHFORM": Roof shapes (not relevant in this example)
@@ -237,7 +236,7 @@ Buildings are colored according to their height. The source data is a shape file
 | 34.2 | gable |
 | 18.6 | shed |
 
-#### Python Code
+#### <Highlight color="grey">Python Code</Highlight>
 
 ```python
 def get_buildings_continuous_map(self):
@@ -268,13 +267,13 @@ setattr(tool_map, "get_buildings_continuous_map", get_buildings_continuous_map)
 
 ### Choropleth Map - Discrete Color Scale
 
-#### Example
+#### <Highlight color="grey">Example</Highlight>
 
 Same as in previous example, however, now the buildings are colored according to their roof shape (”flat”, “gable”, “shed”) using a  discreet (i.e. categorical) color scale.
 
 ![mapbox_choro_discreet_gif.gif](mapbox_choro_discreet_gif.gif)
 
-#### Source Data (Sample)
+#### <Highlight color="grey">Source Data (Sample)</Highlight>
 
 (same as in previous example)
 
@@ -285,7 +284,7 @@ Same as in previous example, however, now the buildings are colored according to
 | 34.2 | gable |
 | 18.6 | shed |
 
-#### Python Code
+#### <Highlight color="grey">Python Code</Highlight>
 
 ```python
 def get_buildings_discreet_map(self):
@@ -320,7 +319,7 @@ setattr(tool_map, "get_buildings_discreet_map", get_buildings_discreet_map)
 
 ### Choropleth Map - Discrete Color Scale with Slider and Barchart
 
-#### Example
+#### <Highlight color="grey">Example</Highlight>
 
 Same as in previous example, however, now we have a slider where we choose a height threshold. Buildings whose heights fall below this treshold are removed from the map. In addition, a bar chart next to the map shows the amount of remaining buildings grouped by roof shape.
 
@@ -328,7 +327,7 @@ Note: After selecting a new value on the slider, the map must be refreshed (in t
 
 ![mapbox_choro_slider_piechart_gif.gif](mapbox_choro_slider_piechart_gif.gif)
 
-#### Source Data (Sample)
+#### <Highlight color="grey">Source Data (Sample)</Highlight>
 
 (same as in previous example)
 
@@ -339,7 +338,7 @@ Note: After selecting a new value on the slider, the map must be refreshed (in t
 | 34.2 | gable |
 | 18.6 | shed |
 
-#### Python Code
+#### <Highlight color="grey">Python Code</Highlight>
 
 **Slider Functions**
 
@@ -433,7 +432,7 @@ setattr(tool_graph, "get_buildings_slider_barchart", get_buildings_slider_barcha
 
 ### Generating New Polygons
 
-#### Example
+#### <Highlight color="grey">Example</Highlight>
 
 So far, we generated our polygons beforehand (i.e. in a GIS) and imported them into the MoLöWe-Server to use them in Mapbox. We can also generate new polygons within Mapbox.
 
@@ -443,7 +442,7 @@ Note: After selecting a new value on the slider, the map must be refreshed (in t
 
 ![mapbox_generate_polygons_gif.gif](mapbox_generate_polygons_gif.gif)
 
-#### Source Data (Sample)
+#### <Highlight color="grey">Source Data (Sample)</Highlight>
 
 (same as example “Scatter Plot”)
 
@@ -454,7 +453,7 @@ Note: After selecting a new value on the slider, the map must be refreshed (in t
 | 53.2634 | 10.3981 | good | 2 |
 | 53.2647 | 10.3981 | unfit | 4 |
 
-#### Python Code
+#### <Highlight color="grey">Python Code</Highlight>
 
 **Slider Functions**
 
