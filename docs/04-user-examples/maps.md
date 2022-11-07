@@ -9,13 +9,14 @@ import Highlight from '@site/src/theme/highlight';
 - Python
 - Gitlab
 
-There are **two ways** to incorporate a map in MoLöWe.
+## <div style={{backgroundColor: 'lightblue'}}> **How to start** </div>
+
+There are **two ways** to incorporate a map in MoLöWe: [Here's a simple flowchart](https://miro.com/app/board/uXjVPfd4oZ8=/?share_link_id=811493081374)
 
 If your gis file (e.g. shapefile) is…
 - **smaller** than 45 Mb: use **Mapbox**
 - **bigger** than 45 Mb: create a map **locally** in a GIS and load it as an image file (either from the MoLöWe-Server or from Git-repo) into MoLöWe
 
-[Here's a simple flowchart](https://miro.com/app/board/uXjVPfd4oZ8=/?share_link_id=811493081374)
 
 In the following, the two ways are presented in detail. Example maps, their data and python codes are given. The examples are intended to give you a glimpse into what’s possible with maps in the MoLöWe.
 
@@ -54,10 +55,10 @@ All GIS processing and plotting is happening “from scratch” each time you ac
 - wide range of basemaps to ease orientation
 
 #### <Highlight color="grey">Cons</Highlight>
-
 - difficulties loading larger (?mb) file sizes
 - plotting time depends on amount of data points: plotting large amount of data points will take a while
 
+---
 
 :::tip Before you start
 In order to use shape files in your maps, you must import the shape files with all of their extensions to the MoLöWe-Server. Supported formats on the Server are .shp, .shx, .prj and .dbf (cpg-files are not supported).
@@ -66,7 +67,7 @@ In order to use shape files in your maps, you must import the shape files with a
 
 ### <div style={{backgroundColor: 'lightgreen'}}> Scatter Plot </div>
 
-Mapbox Scatter plots can be built from either a **coordinate table** (long & lat) or from a **point shape file**
+Mapbox Scatter plots can be built from either a **coordinate table** (long & lat) or from a **point shape file**.
 
 #### <Highlight color="grey">Example</Highlight>
 
@@ -123,7 +124,7 @@ def get_tree_map(self):
 setattr(tool_map, "get_treemap", get_treemap)
 ```
 
-### Scatter Plot with Dropdown List
+### <div style={{backgroundColor: 'lightgreen'}}> Scatter Plot with Dropdown List </div>
 
 #### <Highlight color="grey">Example</Highlight>
 
@@ -213,8 +214,7 @@ def get_tree_dropdown_map(self):
         
 setattr(tool_map, "get_tree_dropdown_map", get_tree_dropdown_map)
 ```
-
-### Choropleth Map - Continuous Color Scale
+### <div style={{backgroundColor: 'lightgreen'}}> Choropleth Map - Continuous Color Scale </div>
 
 #### <Highlight color="grey">Example</Highlight>
 
@@ -263,7 +263,7 @@ def get_buildings_continuous_map(self):
 setattr(tool_map, "get_buildings_continuous_map", get_buildings_continuous_map)
 ```
 
-### Choropleth Map - Discrete Color Scale
+### <div style={{backgroundColor: 'lightgreen'}}> Choropleth Map - Discrete Color Scale </div>
 
 #### <Highlight color="grey">Example</Highlight>
 
@@ -315,7 +315,7 @@ def get_buildings_discreet_map(self):
 setattr(tool_map, "get_buildings_discreet_map", get_buildings_discreet_map)
 ```
 
-### Choropleth Map - Discrete Color Scale with Slider and Barchart
+### <div style={{backgroundColor: 'lightgreen'}}> Choropleth Map - Discrete Color Scale with Slider and Barchart </div>
 
 #### <Highlight color="grey">Example</Highlight>
 
@@ -428,7 +428,7 @@ def get_buildings_slider_barchart(self):
 setattr(tool_graph, "get_buildings_slider_barchart", get_buildings_slider_barchart)
 ```
 
-### Generating New Polygons
+### <div style={{backgroundColor: 'lightgreen'}}> Generating New Polygons </div>
 
 #### <Highlight color="grey">Example</Highlight>
 
