@@ -67,7 +67,7 @@ const config = {
           {
             // Go to documentation, top-left
             type: 'doc',
-            docId: 'intro', // either using docID of page
+            docId: 'welcome-moloewe', // either using docID of page
             position: 'left',
             label: 'Documentation',
           },
@@ -96,7 +96,7 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/intro',
+                to: '/docs/welcome-moloewe',
               },
               {
                 label: 'FAQ',
