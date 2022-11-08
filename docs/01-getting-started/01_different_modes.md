@@ -2,8 +2,7 @@
 
 The user lands on this page when they have successfully logged in. On this page, the user can select between the Edit- and the Presentation-Mode.
 
-<img src="./assets/front-end/SelectionPage.png" alt="selection-page"
-	title="Select Edit or Presentation mode" width="auto" />
+SELECTION PAGE
 
 
 ## 1 Edit-Mode
@@ -14,8 +13,7 @@ In the edit mode, a presentation/a project can be created, worked on, changed & 
 In this mode, a finished presentation can be presented or controlled. Each presentation needs one controller, otherwise it cannot be started. When a presentation is being carried out using MoLöWe, the audience members of the presentation interact with MoLöWe in Presentation Mode. 
 When clicking on the **Presentation** button, there are four drop-down lists that need to be filled out.
 
-<img src="./assets/front-end/PresentationPage.png" alt="presentation-page"
-	title="Presentation page" width="auto" />
+PRESENTATION PAGE
 
 ### Select project
 This dropdown list contains all projects the user has access rights to and that are saved on the MoLöWe.
