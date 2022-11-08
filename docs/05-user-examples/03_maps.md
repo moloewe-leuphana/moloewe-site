@@ -1,14 +1,8 @@
----
-sidebar_label: '🗺️ Maps'
-sidebar_position: 3
----
-
 # 🗺️ Maps
 
 import Highlight from '@site/src/theme/highlight';
 
-
-## <div style={{backgroundColor: 'lightblue'}}> **Required Skills & Software** </div>
+## <p style={{backgroundColor: 'lightblue'}}>**Required Skills & Software**</p>
 
 - GIS
 - Python
@@ -78,7 +72,8 @@ Mapbox Scatter plots can be built from either a **coordinate table** (long & lat
 
 Each dot is a tree, the color representing its health aka. its “score”. Hovering over a tree will show its coordinates and description of health (”excellent”, “good” or “unfit”). The source data is a point shapefile previously uploaded to the MoLöWe-Server (using a coordinate table would also be possible, see python code below).
 
-![mapbox_scatter_gif.gif](mapbox_scatter_gif.gif)
+![mapbox_scatter_gif.gif](./images/mapbox_scatter_gif.gif)
+
 
 #### <Highlight color="grey">Source Data (Sample)</Highlight>
 
@@ -137,7 +132,7 @@ Same as in previous example, however, now we can restrict the map to trees that 
 
 Note: After making a selection in the dropdown list, the map must be refreshed (in the upper right corner of the map) to apply the changes.
 
-![mapbox_scatter_dropdown_gif.gif](mapbox_scatter_dropdown_gif.gif)
+![mapbox_scatter_dropdown_gif.gif](./images/mapbox_scatter_dropdown_gif.gif)
 
 #### <Highlight color="grey">Source Data (Sample)</Highlight>
 
@@ -158,6 +153,7 @@ Note: After making a selection in the dropdown list, the map must be refreshed (
 # define default dropdown selection
 trees_health = "excellent"
 
+
 def get_tree_dropdown(self):
     return {
         "values": ["excellent", "good", "unfit"],
@@ -165,6 +161,7 @@ def get_tree_dropdown(self):
     }
 
 setattr(tool_dropdown, "get_tree_dropdown", get_tree_dropdown)
+
 
 def set_tree_dropdown(self, dropdown_selection):
     global trees_health
@@ -179,8 +176,9 @@ setattr(tool_dropdown, "set_tree_dropdown", set_tree_dropdown)
 def get_tree_dropdown_map(self):
 
   # Note:
-  # - This is mostly the same code as for the first scatter plot example, the only difference being that we
-  #   select the trees that fall into the selected health category first
+  # - This is mostly the same code as for the first scatter plot example, 
+  #   the only difference here is that we first select the trees that fall
+  #   into the selected health category
   # - also, the hovertext will now show the score
   
   # load point shapefile (from the MoLöWe-Server) as geodataframe
@@ -225,7 +223,7 @@ setattr(tool_map, "get_tree_dropdown_map", get_tree_dropdown_map)
 
 Buildings are colored according to their height. The source data is a shape file (imported to the MoLöWe-Server). Hovering over a building will show its index in the shape file and its height (”HOEHEGEB”). A continuous color scale is used.
 
-![mapbox_choro_cotinuous_gif.gif](mapbox_choro_cotinuous_gif.gif)
+![mapbox_choro_cotinuous_gif.gif](./images/mapbox_choro_cotinuous_gif.gif)
 
 #### <Highlight color="grey">Source Data (Sample)</Highlight>
 
@@ -274,7 +272,7 @@ setattr(tool_map, "get_buildings_continuous_map", get_buildings_continuous_map)
 
 Same as in previous example, however, now the buildings are colored according to their roof shape (”flat”, “gable”, “shed”) using a  discreet (i.e. categorical) color scale.
 
-![mapbox_choro_discreet_gif.gif](mapbox_choro_discreet_gif.gif)
+![mapbox_choro_discreet_gif.gif](./images/mapbox_choro_discreet_gif.gif)
 
 #### <Highlight color="grey">Source Data (Sample)</Highlight>
 
@@ -328,7 +326,7 @@ Same as in previous example, however, now we have a slider where we choose a hei
 
 Note: After selecting a new value on the slider, the map must be refreshed (in the upper right corner of the map) to apply the changes. The same goes for the bar chart.
 
-![mapbox_choro_slider_piechart_gif.gif](mapbox_choro_slider_piechart_gif.gif)
+![mapbox_choro_slider_piechart_gif.gif](./images/mapbox_choro_slider_piechart_gif.gif)
 
 #### <Highlight color="grey">Source Data (Sample)</Highlight>
 
@@ -443,7 +441,7 @@ In this example we are generating buffers around trees. The buffer size is defin
 
 Note: After selecting a new value on the slider, the map must be refreshed (in the upper right corner of the map) to apply the changes. 
 
-![mapbox_generate_polygons_gif.gif](mapbox_generate_polygons_gif.gif)
+![mapbox_generate_polygons_gif.gif](./images/mapbox_generate_polygons_gif.gif)
 
 #### <Highlight color="grey">Source Data (Sample)</Highlight>
 

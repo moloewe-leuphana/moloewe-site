@@ -1,9 +1,4 @@
----
-sidebar_label: 'Create Survey'
-sidebar_position: 1
----
-
-# Creating an audience survey with Switch Tool
+# Create a Survey
 
 There are many cases where opinions or polls from the audience are needed. This section provides you with one approach using the Switch Tool.
 
