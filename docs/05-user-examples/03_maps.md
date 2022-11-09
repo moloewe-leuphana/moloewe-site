@@ -82,7 +82,7 @@ Each dot is a tree, the color representing its health aka. its “score”. Hove
 | 53.2634 | 10.3981 | good | 2 |
 | 53.2647 | 10.3981 | unfit | 4 |
 
-#### <Highlight color="grey">Python Code</Highlight>
+#### <Highlight> Python Code </Highlight>
 
 ```python
 def get_tree_map(self):
@@ -122,9 +122,9 @@ def get_tree_map(self):
 setattr(tool_map, "get_treemap", get_treemap)
 ```
 
-### <span style={{backgroundColor: 'lightgreen'}}> Scatter Plot with Dropdown List </span>
+### <Highlightsubhead> Scatter Plot with Dropdown List </Highlightsubhead>
 
-#### <Highlight color="grey">Example</Highlight>
+#### <Highlight> Example </Highlight>
 
 Same as in previous example, however, now we can restrict the map to trees that belong to a certain health category (”excellent”, “good” or “unfit”) using a dropdown list. Hovering over a tree will show its coordinates and score.
 
@@ -132,7 +132,7 @@ Note: After making a selection in the dropdown list, the map must be refreshed (
 
 ![](/img/mapbox_scatter_dropdown_gif.gif)
 
-#### <Highlight color="grey">Source Data (Sample)</Highlight>
+#### <Highlight> Source Data (Sample) </Highlight>
 
 (same as in previous example)
 
@@ -143,7 +143,7 @@ Note: After making a selection in the dropdown list, the map must be refreshed (
 | 53.2634 | 10.3981 | good | 2 |
 | 53.2647 | 10.3981 | unfit | 4 |
 
-#### <Highlight color="grey">Python Code</Highlight>
+#### <Highlight> Python Code </Highlight>
 
 **Dropdown List Functions**
 
@@ -215,7 +215,8 @@ def get_tree_dropdown_map(self):
         
 setattr(tool_map, "get_tree_dropdown_map", get_tree_dropdown_map)
 ```
-### <span style={{backgroundColor: 'lightgreen'}}> Choropleth Map - Continuous Color Scale </span>
+
+### <Highlightsubhead> Choropleth Map - Continuous Color Scale </Highlightsubhead>
 
 #### <Highlight color="grey">Example</Highlight>
 
