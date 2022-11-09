@@ -29,14 +29,14 @@ This dropdown list shows all screens meaning all available 5 Monitors (for furth
 
 ### <Highlightsubhead> Presentation </Highlightsubhead>
 
-The user can choose between **Presentation** and **Controller** (see [Controller Mode](#Controller Mode)) in this dropdown menu. To start a presentation, a controller is necessary. The controller has more rights and options during the presentation. There can be multiple presenters that cannot however control the presentation. 
+The user can choose between **Presentation** and **Controller** (see [Controller Mode](#Controller_Mode)) in this dropdown menu. To start a presentation, a controller is necessary. The controller has more rights and options during the presentation. There can be multiple presenters that cannot however control the presentation. 
 
 ### <Highlightsubhead> From Start </Highlightsubhead>
 This dropdown list may not be clickable everytime, since it needs saved (previous) sessions as other options. If the presentation has not been presented yet or no earlier session was saved, then the presentation can only start from the start, so to say. If there are however old session that were saved (i.e. during a workshop at the end of a day) than the presentation can be started from that exact version.
 
 To start the presentation, the user then clicks on the **Start** button after filling out all dropdown lists.
 
-## <Highlighthead id="Controller Mode"> **Controller Mode** </Highlighthead>
+## <Highlighthead id="Controller_Mode"> **Controller Mode** </Highlighthead>
 
 This mode can be entered on the presentation page in the third dropdown list. 
 When a presentation is being carried out using MoLöWe, the presenter interacts with MoLöWe in Controller Mode.
