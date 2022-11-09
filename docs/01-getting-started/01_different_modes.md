@@ -2,18 +2,16 @@
 
 The user lands on this page when they have successfully logged in. On this page, the user can select between the Edit- and the Presentation-Mode.
 
-SELECTION PAGE
+![](/img/SelectionPage.png)
 
-
-## 1 Edit-Mode
+## <span style={{backgroundColor: 'lightblue'}}>**Edit Mode**</span>
 In the edit mode, a presentation/a project can be created, worked on, changed & up- or downloaded. This mode is necessary, when planning and preparing a workshop. The following chapters with *Edit-* as a prefix explain the possible actions in detail.
 
-
-## 2 Presentation-Mode
+## <span style={{backgroundColor: 'lightblue'}}>**Presentation Mode**</span>
 In this mode, a finished presentation can be presented or controlled. Each presentation needs one controller, otherwise it cannot be started. When a presentation is being carried out using MoLöWe, the audience members of the presentation interact with MoLöWe in Presentation Mode. 
 When clicking on the **Presentation** button, there are four drop-down lists that need to be filled out.
 
-PRESENTATION PAGE
+![](/img/PresentationPage.png)
 
 ### Select project
 This dropdown list contains all projects the user has access rights to and that are saved on the MoLöWe.
@@ -29,7 +27,7 @@ This dropdown list may not be clickable everytime, since it needs saved (previou
 
 To start the presentation, the user then clicks on the **Start** button after filling out all dropdown lists.
 
-## 3 Controller Mode 
+## <span style={{backgroundColor: 'lightblue'}}>**Controller Mode**</span>
 This mode can be entered on the presentation page in the third dropdown list. 
 When a presentation is being carried out using MoLöWe, the presenter interacts with MoLöWe in Controller Mode.
 Controller Mode allows users to change the Slides that are associated with Screens. Additionally, the Controller Mode also allows users to change the Screens that are placed on the different Display Devices.
