@@ -6,7 +6,7 @@ import Highlightsubhead from '@site/src/theme/highlightsubhead';
 
 The user lands on this page when they have successfully logged in. On this page, the user can select between the Edit- and the Presentation-Mode.
 
-![](/img/SelectionPage.png)
+![](/img/modes/SelectionPage.png)
 
 ## <Highlighthead> **Edit Mode** </Highlighthead>
 
@@ -17,7 +17,7 @@ In the edit mode, a presentation/a project can be created, worked on, changed & 
 In this mode, a finished presentation can be presented or controlled. Each presentation needs one controller, otherwise it cannot be started. When a presentation is being carried out using MoLöWe, the audience members of the presentation interact with MoLöWe in Presentation Mode. 
 When clicking on the **Presentation** button, there are four drop-down lists that need to be filled out.
 
-![](/img/PresentationPage.png)
+![](/img/modes/PresentationPage.png)
 
 ### <Highlightsubhead> Select project </Highlightsubhead>
 
