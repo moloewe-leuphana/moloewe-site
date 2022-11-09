@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function Highlightsubhead({children, color}) {
+export default function Highlightsubhead({children}) {
   return (
     <span
       style={{
-        backgroundColor: color,
+        backgroundColor: "lightgreen",
         borderRadius: '5px',
-        color: '#fff',
+        color: 'black',
         padding: '0.2rem',
       }}>
       {children}
