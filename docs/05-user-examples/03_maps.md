@@ -4,13 +4,13 @@ import Highlight from '@site/src/theme/highlight';
 import Highlighthead from '@site/src/theme/highlighthead';
 import Highlightsubhead from '@site/src/theme/highlightsubhead';
 
-## <Highlighthead color="lightblue">**Required Skills & Software**</Highlighthead>
+## <Highlighthead> **Required Skills & Software** </Highlighthead>
 
 - GIS
 - Python
 - Gitlab
 
-## <Highlighthead color="lightblue">**How to start**</Highlighthead>
+## <Highlighthead> **How to start** </Highlighthead>
 
 There are **two ways** to incorporate a map in MoLöWe: [Here's a simple flowchart](https://miro.com/app/board/uXjVPfd4oZ8=/?share_link_id=811493081374)
 
@@ -42,20 +42,18 @@ mapbox_access_token = "pk.eyJ1IjoibW9sb2V3ZSIsImEiOiJjanprMzFkODUwMnJyM29vM3lwYW
 ```
 :::
 
-## <Highlighthead color="lightblue">**Mapbox**</Highlighthead>
+## <Highlighthead> **Mapbox** </Highlighthead>
 
-### <span style={{backgroundColor: 'lightgreen'}}> Using Mapbox </span>
-
+### <Highlightsubhead> Using Mapbox </Highlightsubhead>
 
 All GIS processing and plotting is happening “from scratch” each time you access the slide (using the files imported to the MoLöWe-Server for the project).
 
-
-#### <Highlight color="grey">Pros</Highlight>
+#### <Highlight> Pros </Highlight>
 - interactivity: you can freely zoom, navigate and turn off elements in the map
 - hovertext
 - wide range of basemaps to ease orientation
 
-#### <Highlight color="grey">Cons</Highlight>
+#### <Highlight> Cons </Highlight>
 - difficulties loading larger (?mb) file sizes
 - plotting time depends on amount of data points: plotting large amount of data points will take a while
 
@@ -65,19 +63,17 @@ All GIS processing and plotting is happening “from scratch” each time you ac
 In order to use shape files in your maps, you must import the shape files with all of their extensions to the MoLöWe-Server. Supported formats on the Server are .shp, .shx, .prj and .dbf (cpg-files are not supported).
 :::
 
-
-### <span style={{backgroundColor: 'lightgreen'}}> Scatter Plot </span>
+### <Highlightsubhead> Scatter Plot </Highlightsubhead>
 
 Mapbox Scatter plots can be built from either a **coordinate table** (long & lat) or from a **point shape file**.
 
-#### <Highlight color="grey">Example</Highlight>
+#### <Highlight> Example </Highlight>
 
 Each dot is a tree, the color representing its health aka. its “score”. Hovering over a tree will show its coordinates and description of health (”excellent”, “good” or “unfit”). The source data is a point shapefile previously uploaded to the MoLöWe-Server (using a coordinate table would also be possible, see python code below).
 
 ![](/img/mapbox_scatter_gif.gif)
 
-
-#### <Highlight color="grey">Source Data (Sample)</Highlight>
+#### <Highlight> Source Data (Sample) </Highlight>
 
 | lat | lon | text | score |
 | --- | --- | --- | --- |
@@ -536,7 +532,7 @@ setattr(tool_map, "get_trees_buffer_map", get_trees_buffer_map)
 
 ---
 
-## <span style={{backgroundColor: 'lightblue'}}> **Creating Map/s Locally** </span>
+## <Highlighthead> **Creating Map/s Locally** </Highlighthead>
 
 **Pros**
 
