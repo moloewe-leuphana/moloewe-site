@@ -2,15 +2,15 @@
 
 import Highlight from '@site/src/theme/highlight';
 import Highlighthead from '@site/src/theme/highlighthead';
+import Highlightsubhead from '@site/src/theme/highlightsubhead';
 
-## <span style={{backgroundColor: 'lightblue'}}>**Required Skills & Software**</span>
 ## <Highlighthead color="lightblue">**Required Skills & Software**</Highlighthead>
 
 - GIS
 - Python
 - Gitlab
 
-## <span style={{backgroundColor: 'lightblue'}}> **How to start** </span>
+## <Highlighthead color="lightblue">**How to start**</Highlighthead>
 
 There are **two ways** to incorporate a map in MoLöWe: [Here's a simple flowchart](https://miro.com/app/board/uXjVPfd4oZ8=/?share_link_id=811493081374)
 
@@ -42,7 +42,7 @@ mapbox_access_token = "pk.eyJ1IjoibW9sb2V3ZSIsImEiOiJjanprMzFkODUwMnJyM29vM3lwYW
 ```
 :::
 
-## <span style={{backgroundColor: 'lightblue'}}> **Mapbox** </span>
+## <Highlighthead color="lightblue">**Mapbox**</Highlighthead>
 
 ### <span style={{backgroundColor: 'lightgreen'}}> Using Mapbox </span>
 
