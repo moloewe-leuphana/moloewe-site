@@ -1,10 +1,10 @@
 # 🗺️ Maps
 
 import Highlight from '@site/src/theme/highlight';
-import Highlight_Header from '@site/src/theme/highlight_header';
+import Highlighthead from '@site/src/theme/highlighthead';
 
 ## <span style={{backgroundColor: 'lightblue'}}>**Required Skills & Software**</span>
-## <Highlight_Header color="lightblue">**Required Skills & Software**</Highlight_Header>
+## <Highlighthead color="lightblue">**Required Skills & Software**</Highlighthead>
 
 - GIS
 - Python

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Highlight_Header({children, color}) {
+export default function Highlighthead({children, color}) {
   return (
     <span
       style={{
