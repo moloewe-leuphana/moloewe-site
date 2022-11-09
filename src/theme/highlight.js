@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function Highlight({children, color}) {
+export default function Highlight({children}) {
   return (
     <span
       style={{
-        backgroundColor: color,
+        backgroundColor: "grey",
         borderRadius: '5px',
         color: '#fff',
         padding: '0.2rem',
