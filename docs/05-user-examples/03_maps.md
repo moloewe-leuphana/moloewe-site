@@ -4,7 +4,7 @@ import Highlight from '@site/src/theme/highlight';
 import Highlight_Header from '@site/src/theme/highlight_header';
 
 ## <span style={{backgroundColor: 'lightblue'}}>**Required Skills & Software**</span>
-## <Highlight color="lightblue">**Required Skills & Software**</Highlight>
+## <Highlight_Header color="lightblue">**Required Skills & Software**</Highlight_Header>
 
 - GIS
 - Python
