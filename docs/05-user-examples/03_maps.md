@@ -4,6 +4,10 @@ import Highlight from '@site/src/theme/highlight';
 import Highlighthead from '@site/src/theme/highlighthead';
 import Highlightsubhead from '@site/src/theme/highlightsubhead';
 
+import mapbox_scatter_gif from '/img/assets/mapbox_scatter_gif.gif';
+
+<img src={mapbox_scatter_gif} />
+
 ## <Highlighthead> **Required Skills & Software** </Highlighthead>
 
 - GIS
