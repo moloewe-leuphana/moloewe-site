@@ -2,7 +2,7 @@
 
 There are two separate deployments (hereafter referred to as _versions_) of the Mobile Solution Workshop software:
 
-1. the local version on the Mobile Solution Workshop PC on campus
+1. the local version on the Mobile Solution Workshop Windows PC on campus
 2. the server version on https://moloewe.leuphana.de/login
 
 This is the same software in different locations. For each version a separate user account is needed. The local and server version differ in terms of accessibility and network settings.
