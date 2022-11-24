@@ -9,7 +9,7 @@ const config = {
   title: ' MoLöwe - Mobile Lösungswerkstatt',
   tagline: 'Faculty of Sustainability - Leuphana University',
   url: 'https://moloewe.leuphana.de',
-  baseUrl: '/documentation',
+  baseUrl: '/documentation/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
