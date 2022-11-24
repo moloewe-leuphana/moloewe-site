@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: ' MoLöwe - Mobile Lösungswerkstatt',
   tagline: 'Faculty of Sustainability - Leuphana University',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://moloewe.leuphana.de',
+  baseUrl: '/documentation',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
